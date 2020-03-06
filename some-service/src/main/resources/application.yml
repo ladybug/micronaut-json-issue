@@ -23,6 +23,16 @@ endpoints:
         prepStmtCacheSize: 250
         prepStmtCacheSqlLimit: 2048
         useServerPrepStmts: true
+
+jpa:
+  default:
+    packages-to-scan:
+      - io.github.jhipster.sample.domain
+      - io.github.jhipster.sample.repository
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: create-drop
 #    h2:
 #      console:
 #        enabled: false
